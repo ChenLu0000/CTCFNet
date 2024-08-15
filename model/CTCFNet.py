@@ -1,6 +1,3 @@
-import sys
-sys.path.append('/workspace/CTCFNet/model')
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
