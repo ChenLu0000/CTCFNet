@@ -201,7 +201,7 @@ class CTCFNet(nn.Module):
         if class_dim > 0:
             self.head = nn.Linear(embed_dims[3], class_dim)
 
-        self.cnn_branch1 = CNN_Block123(inchans=3, outchans=64)
+        self.cnn_branch1 = CNN_Block123(inchans=in_chans, outchans=64)
         self.cnn_branch2 = CNN_Block123(inchans=64, outchans=128)
         self.cnn_branch3 = CNN_Block123(inchans=64, outchans=128)
         self.cnn_branch4 = CNN_Block45(inchans=128, outchans=256)
